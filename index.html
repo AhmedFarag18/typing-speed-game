@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Typing Speed Test Game by HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Start Game -->
+    <div class="game">
+        <div class="name">Typing Speed Test Game</div>
+        <div class="container">
+            <div class="message">
+                You Are Playing On
+                <span class="lvl"></span> Level & You have <span class="seconds"></span> Seconds To Type The Word
+            </div>
+            <div class="the-word"></div>
+            <input type="text" class="input" />
+            <div class="upcoming-words">Words Will Show Here</div>
+            <div class="control">
+                <div class="time"> Time Left: <span></span> Seconds</div>
+                <div class="score">Score: <span class="got">0</span> From <span class="total"></span></div>
+            </div>
+            <div class="finish">
+                <div class="congratz">
+                    <span class="good">Congratz 🎉🎈</span>
+                    <a href="#" class="start btn-again">Start Again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Game Popup -->
+    <div class="main-popup">
+        <div class="popup">
+            <div class="img">
+                <img src="images/rocket.png" alt="rocket">
+            </div>
+            <div class="name popup-name">Typing Speed Test Game</div>
+            <div class="select_box">
+                <p class="selected"><span>Select Level</span></p>
+                <ul id="box">
+                    <li>Easy</li>
+                    <li>Normal</li>
+                    <li>Hard</li>
+                </ul>
+            </div>
+            <span class="validation"></span>
+            <div class="description">
+                <p>1- First You should choose the Level of the Game.</p>
+                <p>2- You Will have <span>[3 seconds]</span> Extra for only First Word</p>
+                <p>3- You can't copy and paste any word in Input</p>
+                <p>4- IF Choose <span>[Easy]</span> Level You will have <span>[6]</span> Seconds To Type The Word </p>
+                <p>5- IF <span>[Normal]</span> Level You will have <span>[5]</span> Seconds & Words is More difficult than Easy level.</p>
+                <p>6- IF <span>[Hard]</span> Level You will have <span>[4]</span> Seconds. & Words Is More difficult than Normal level.</p>
+            </div>
+            <a href="#" class="popup-button">Start Game</a>
+        </div>
+    </div>
+    <!-- Congratz Animation  -->
+    <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
